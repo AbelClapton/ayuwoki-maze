@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseMaze from '@/components/BaseMaze.vue'
+import { BaseMaze } from '@/components'
 </script>
 
 <template>
