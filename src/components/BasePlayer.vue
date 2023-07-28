@@ -18,11 +18,11 @@ const styleObject = computed<CSSProperties>(() => {
 </script>
 
 <template>
-  <div class="character" :style="styleObject"></div>
+  <div class="player" :style="styleObject"></div>
 </template>
 
 <style scoped>
-.character {
+.player {
   position: absolute;
   background-color: #aaa;
 }
