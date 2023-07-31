@@ -2,9 +2,53 @@
 
 #app {
   max-width: 1280px;
-  min-height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+body{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by changing the alpha value (0.5 in this case) */
+}
+
+.notebook {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(#e9e9e9 1px, transparent 1px);
+  background-size: 100% 25px; /* Adjust this value to control the distance between lines */
+}
+
+.line-vertical {
+  position: absolute;
+  top: 0;
+  left: 7%;
+  bottom: 0;
+  width: 2px; /* Width of the red margin line */
+  background-color: #ff0000; /* Red color of the margin line */
 }

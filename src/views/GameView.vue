@@ -3,7 +3,7 @@ import BaseMaze from '@/components/BaseMaze.vue'
 </script>
 
 <template>
-  <main>
-    <base-maze :rows="16" :cols="36" :cell-size="32" />
+  <main class="main">
+    <base-maze :rows="3" :cols="3" :cell-size="60" />
   </main>
 </template>

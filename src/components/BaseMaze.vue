@@ -13,7 +13,7 @@ const { player } = usePlayer({ x: 0, y: 0 }, maze)
 
 <template>
   <div class="maze">
-    <base-cell v-for="cell of maze.cells" :key="cell.x + cell.y * props.cols" :cell="cell" />
+    <base-cell v-for="cell of maze.cells" :key="cell.x + cell.y * props.cols" :cell="cell" :cell-size= "props.cellSize" />
     <base-character :x="player.x" :y="player.y" :size="props.cellSize" />
   </div>
 </template>
